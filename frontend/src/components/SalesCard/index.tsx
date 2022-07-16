@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../utils/request";
 import { Sale } from "../../models/sale";
-import NotificationButton from "../NotificationButton";
+import ButtonNotification from "../ButtonNotification";
 
 function SalesCard() {
 
@@ -75,7 +75,7 @@ function SalesCard() {
                   <td>R$ {sale.amount.toFixed(2)}</td>
                   <td>
                     <div className="dsmeta-red-btn-container">
-                      <NotificationButton saleId={sale.id}/>
+                      <ButtonNotification saleId={sale.id}/>
                     </div>
                   </td>
                 </tr>
